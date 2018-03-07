@@ -13,4 +13,6 @@ gitc
 
 .DS_Store
 
-api.php
+config/api.php
+
+vendor
