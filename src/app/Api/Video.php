@@ -66,7 +66,7 @@ class Video extends BaseApi {
 
         'album_id' => 'album_id|int|false||相册id',
 
-        'keyword' => 'keyword|string|false||关键字',
+        'title' => 'title|string|false||关键字',
 
         'status' => 'status|int|false||视频状态',
 
