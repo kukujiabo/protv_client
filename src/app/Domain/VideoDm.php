@@ -35,4 +35,13 @@ class VideoDm {
   
   }
 
+  /**
+   * 视频详情
+   */
+  public function detail($data) {
+  
+    return \App\request('App.Video.Detail', $data);
+  
+  }
+
 }

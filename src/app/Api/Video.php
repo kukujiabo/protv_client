@@ -76,6 +76,12 @@ class Video extends BaseApi {
 
         'page_size' => 'page_size|int|false|20|分页数量',
       
+      ],
+
+      'detail' => [
+
+        'id' => 'id|int|true||视频id'
+
       ]
     
     ]);
@@ -118,5 +124,16 @@ class Video extends BaseApi {
   
   }
 
+  /**
+   * 视频详情
+   * @desc 视频详情
+   *
+   * @return
+   */
+  public function detail() {
+  
+    return $this->dm->detail($this->retriveRuleParams(__FUNCTION__));
+  
+  }
 
 }
