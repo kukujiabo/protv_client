@@ -32,6 +32,12 @@ class Member extends BaseApi {
       
         'member_name' => 'member_name|string|false||会员名称',
 
+        'portrait' => 'portrait|string|false||用户头像',
+
+        'wx_city' => 'wx_city|string|false||城市名称',
+
+        'wx_province' => 'wx_province|string|false||省份名称',
+
         'sex' => 'sex|int|false||性别'
       
       ],
