@@ -80,4 +80,13 @@ class MemberDm {
   
   }
 
+  /**
+   * 微信登录
+   */
+  public function wechatMiniLogin($params) {
+  
+    return \App\request('App.Member.WechatMiniLogin', $params);
+  
+  }
+
 }
