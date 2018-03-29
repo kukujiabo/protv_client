@@ -21,7 +21,7 @@ class AuthorityFilter implements Filter {
         /**
          * 白名单请求放行
          */
-        if (in_array(\PhalApi\DI()->request->get('service'), \PhalApi\DI()->config->get('app.service_whitelist'))) {
+        if (in_array(\PhalApi\DI()->request->get('service'), \PhalApi\DI()->config->get('wt.service_whitelist'))) {
         
           return;
         
