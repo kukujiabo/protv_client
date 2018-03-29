@@ -16,7 +16,7 @@ class MemberDm {
   
     $requestHeader = getallheaders();
   
-    $auth = RedisClient::get('member_auth', $requestHeader['X-TOKEN']);
+    $auth = RedisClient::get('member_auth', $requestHeader['CX-TOKEN']);
 
     $this->_member = $auth;
 
