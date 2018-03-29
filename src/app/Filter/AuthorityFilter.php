@@ -47,7 +47,7 @@ class AuthorityFilter implements Filter {
            * CX-TOKEN 存在时，校验该令牌是否有效
            */
         
-          $auth = RedisClient::get('member_auth', $headers['CX-TOKEN']);
+          $auth = RedisClient::get('member_auth', $headers['CX-TOKEN'], true);
 
           if ( !$auth )  {
           
