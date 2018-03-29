@@ -45,7 +45,7 @@ class MemberDm {
    */
   public function editMember($params) {
 
-    $params['member_id'] = $this->_member->id;
+    $params['id'] = $this->_member->id;
   
     return \App\request('App.Member.EditMember', $params);
   
