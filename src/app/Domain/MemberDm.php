@@ -65,7 +65,7 @@ class MemberDm {
    */
   public function updatePassword($params) {
 
-    $params['member_id'] = $this->_member['id'];
+    $params['member_id'] = $this->_member->id;
   
     return \App\request('App.Member.UpdatePassword', $params);
   
