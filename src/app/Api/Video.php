@@ -70,6 +70,8 @@ class Video extends BaseApi {
 
         'status' => 'status|int|false||视频状态',
 
+        'created_at' => 'created_at|string|false||视频创建时间',
+
         'order' => 'order|int|false|id desc|排序',
 
         'page' => 'page|int|false|1|页码',
