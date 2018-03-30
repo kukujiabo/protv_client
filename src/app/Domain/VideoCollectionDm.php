@@ -22,7 +22,7 @@ class VideoCollectionDm {
    */
   public function addUserCollection($params) {
 
-    $params['uid'] => $this->_member->id
+    $params['uid'] = $this->_member->id
   
     return \App\request('', $params);
   
@@ -33,7 +33,7 @@ class VideoCollectionDm {
    */
   public function cancelUserCollection($params) {
 
-    $params['uid'] => $this->_member->id
+    $params['uid'] = $this->_member->id
   
     return \App\request('', $params);
   
@@ -44,7 +44,7 @@ class VideoCollectionDm {
    */
   public function getUserCollectionIds($params) {
 
-    $params['uid'] => $this->_member->id
+    $params['uid'] = $this->_member->id
   
     return \App\request('', $params);
   
