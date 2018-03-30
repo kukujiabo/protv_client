@@ -54,7 +54,7 @@ class VideoDm {
    */
   public function detail($data) {
 
-    $data['uid'] => $this->_member->id;
+    $data['uid'] = $this->_member->id;
   
     return \App\request('App.Video.Detail', $data);
   
