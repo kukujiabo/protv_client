@@ -22,7 +22,7 @@ class VideoFavoriteDm {
 
   public function addUserFavorVideo($params) {
 
-    $params['uid'] = $this->_member->id
+    $params['uid'] = $this->_member->id;
   
     return \App\request('App.VideoFavorite.AddUserFavorVideo', $params);
   
@@ -30,7 +30,7 @@ class VideoFavoriteDm {
 
   public function cancelUserFavorVideo($params) {
 
-    $params['uid'] = $this->_member->id
+    $params['uid'] = $this->_member->id;
   
     return \App\request('App.VideoFavorite.CancelUserFavorVideo', $params);
   
