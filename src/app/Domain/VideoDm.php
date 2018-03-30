@@ -8,6 +8,18 @@ namespace App\Domain;
  */
 class VideoDm {
 
+  protected $_member;
+
+  public function __construct() {
+  
+    $requestHeader = getallheaders();
+  
+    $auth = RedisClient::get('member_auth', $requestHeader['CX-TOKEN']);
+
+    $this->_member = $auth;
+
+  }
+
   /**
    * 添加视频
    */
@@ -39,6 +51,8 @@ class VideoDm {
    * 视频详情
    */
   public function detail($data) {
+
+    $data['uid'] => $this->_member->id;
   
     return \App\request('App.Video.Detail', $data);
   
