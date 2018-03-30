@@ -1,6 +1,8 @@
 <?php
 namespace App\Domain;
 
+use App\Library\RedisClient;
+
 /**
  * 视频接口域
  *
