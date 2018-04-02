@@ -86,6 +86,16 @@ class Video extends BaseApi {
 
         'id' => 'id|int|true||视频id'
 
+      ],
+
+      'getUserCollectVideos' => [
+      
+        'order' => 'order|string|false||排序',
+
+        'page' => 'page|int|false||页码',
+
+        'page_size' => 'page_size|int|false||每页条数'
+      
       ]
     
     ]);
@@ -138,6 +148,18 @@ class Video extends BaseApi {
   
     return $this->dm->detail($this->retriveRuleParams(__FUNCTION__));
   
+  }
+
+  /**
+   * 获取用户收藏的视频
+   * @desc 获取用户收藏的视频
+   *
+   * @return list
+   */
+  public function getUserCollectVideos() {
+  
+    return $this->dm->getUserCollectVideos($this->retriveRuleParams(__FUNCTION__)); 
+
   }
 
 }
