@@ -180,7 +180,7 @@ class Video extends BaseApi {
    */
   public function getUserFavoriteVideos() {
   
-    return $this->dm->getUserCollectVideos($this->retriveRuleParams(__FUNCTION__)); 
+    return $this->dm->getUserFavoriteVideos($this->retriveRuleParams(__FUNCTION__)); 
   
   }
 
