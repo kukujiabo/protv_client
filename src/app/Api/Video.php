@@ -96,6 +96,16 @@ class Video extends BaseApi {
 
         'page_size' => 'page_size|int|false||每页条数'
       
+      ],
+
+      'getUserFavoriteVideos' => [
+      
+        'order' => 'order|string|false||排序',
+
+        'page' => 'page|int|false||页码',
+
+        'page_size' => 'page_size|int|false||每页条数'
+      
       ]
     
     ]);
@@ -160,6 +170,18 @@ class Video extends BaseApi {
   
     return $this->dm->getUserCollectVideos($this->retriveRuleParams(__FUNCTION__)); 
 
+  }
+
+  /**
+   * 获取用户喜欢的视频
+   * @desc 获取用户喜欢的视频
+   *
+   * @return list
+   */
+  public function getUserFavoriteVideos() {
+  
+    return $this->dm->getUserCollectVideos($this->retriveRuleParams(__FUNCTION__)); 
+  
   }
 
 }

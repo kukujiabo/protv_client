@@ -66,6 +66,13 @@ class VideoDm {
   
     return \App\request('App.Video.GetUserCollectVideos', $params);
   
+  }
+
+  public function getUserFavoriteVideos($params) {
+
+    $params['uid'] = $this->_member->id;
+  
+    return \App\request('App.Video.GetUserFavoriteVideos', $params);
   
   }
 
