@@ -62,9 +62,9 @@ class VideoDm {
 
   public function getUserCollectVideos($params) {
 
-    $data['uid'] = $this->_member->id;
+    $params['uid'] = $this->_member->id;
   
-    return \App\request('App.Video.GetUserCollectVideos', $data);
+    return \App\request('App.Video.GetUserCollectVideos', $params);
   
   
   }
