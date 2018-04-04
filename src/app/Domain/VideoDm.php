@@ -49,7 +49,7 @@ class VideoDm {
 
     if ($data['keyword']) {
 
-      $searchData = [ 'uid' => $this-_member->id, 'content' => $data['keyword'] ];
+      $searchData = [ 'uid' => $this->_member->id, 'content' => $data['keyword'] ];
     
       \App\request('App.SearchHistory.AddMemberSearchHistory', $searchData);
     
