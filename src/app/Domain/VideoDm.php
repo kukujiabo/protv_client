@@ -45,7 +45,17 @@ class VideoDm {
    */
   public function listQuery($data) {
   
-    return \App\request('App.Video.listQuery', $data);
+    $result = \App\request('App.Video.listQuery', $data);
+
+    if ($data['keyword']) {
+
+      $searchData = [ 'uid' => $this-_member->id, 'content' => $data['keyword'] ];
+    
+      \App\request('App.SearchHistory.AddMemberSearchHistory', $searchData);
+    
+    }
+
+    return $result;
   
   }
 
