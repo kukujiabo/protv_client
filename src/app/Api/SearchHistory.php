@@ -2,8 +2,8 @@
 namespace App\Api;
 
 /**
- * 收藏记录历史接口
- * @desc 收藏记录历史
+ * 搜索记录历史接口
+ * @desc 搜索记录历史
  *
  * @author Meroc Chen <398515393@qq.com>
  */
@@ -23,9 +23,6 @@ class SearchHistory extends BaseApi {
       ],
 
       'getMemberSearchHistory' => [
-      
-        'uid' => 'uid|int|true||用户id',
-        'content' => 'content|string|true||内容'
       
       ],
 

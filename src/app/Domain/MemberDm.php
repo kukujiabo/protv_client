@@ -10,7 +10,7 @@ use App\Library\RedisClient;
  */
 class MemberDm {
 
-  protected $_member;
+  protected $_member; 
 
   public function __construct() {
   
