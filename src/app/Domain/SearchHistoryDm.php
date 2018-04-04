@@ -1,6 +1,8 @@
 <?php
 namespace App\Domain;
 
+use App\Library\RedisClient;
+
 /**
  * 查询搜索历史
  */
