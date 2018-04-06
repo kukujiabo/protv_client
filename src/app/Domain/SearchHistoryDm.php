@@ -47,6 +47,8 @@ class SearchHistoryDm {
   }
 
   public function removeAll($params) {
+
+    $params['uid'] = $this->_member->id;
   
     return \App\request('App.SearchHistory.RemoveAll', $params);
   

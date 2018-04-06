@@ -34,8 +34,6 @@ class SearchHistory extends BaseApi {
 
       'removeAll' => [
       
-        'uid' => 'uid|int|true||清空历史查询记录' 
-      
       ]
     
     ]);
